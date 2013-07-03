@@ -6,6 +6,7 @@ gem 'rails', '4.0.0'
 group :development, :test do
   gem 'rspec-rails', '2.11.0'
   gem 'sqlite3'
+  gem 'capybara','~> 2.0.1'
 end
 
 group :assets do
@@ -16,12 +17,9 @@ end
 
 
 gem 'jquery-rails'
-
+gem 'turbolinks'
 group :production do
   gem 'pg', '0.12.2'
 end
-group :doc do
-  # bundle exec rake doc:rails generates the API under doc/api.
-  gem 'sdoc', require: false
-end
+
 
